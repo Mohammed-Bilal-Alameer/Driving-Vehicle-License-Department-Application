@@ -1,0 +1,8 @@
+clsDataAccessSettings.cs
+bin/
+obj/
+
+*.exe
+*.dll
+*.pdb
+
