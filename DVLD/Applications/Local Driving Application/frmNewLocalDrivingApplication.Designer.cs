@@ -56,17 +56,19 @@
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.Maroon;
-            this.lblHeader.Location = new System.Drawing.Point(183, 25);
+            this.lblHeader.Location = new System.Drawing.Point(244, 31);
+            this.lblHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(324, 25);
+            this.lblHeader.Size = new System.Drawing.Size(419, 33);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "New Local Driving Application";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(440, 504);
+            this.btnClose.Location = new System.Drawing.Point(587, 620);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(93, 35);
+            this.btnClose.Size = new System.Drawing.Size(124, 43);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -74,9 +76,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(548, 504);
+            this.btnSave.Location = new System.Drawing.Point(731, 620);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(93, 35);
+            this.btnSave.Size = new System.Drawing.Size(124, 43);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -86,29 +89,32 @@
             // 
             this.tcLocalPersonInfo.Controls.Add(this.tabPersonInfo);
             this.tcLocalPersonInfo.Controls.Add(this.tabLDAInfo);
-            this.tcLocalPersonInfo.Location = new System.Drawing.Point(3, 53);
+            this.tcLocalPersonInfo.Location = new System.Drawing.Point(4, 65);
+            this.tcLocalPersonInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tcLocalPersonInfo.Name = "tcLocalPersonInfo";
             this.tcLocalPersonInfo.SelectedIndex = 0;
-            this.tcLocalPersonInfo.Size = new System.Drawing.Size(685, 449);
+            this.tcLocalPersonInfo.Size = new System.Drawing.Size(913, 553);
             this.tcLocalPersonInfo.TabIndex = 5;
             // 
             // tabPersonInfo
             // 
             this.tabPersonInfo.Controls.Add(this.btnNext);
             this.tabPersonInfo.Controls.Add(this.ctrlPersonCardWithFilter1);
-            this.tabPersonInfo.Location = new System.Drawing.Point(4, 22);
+            this.tabPersonInfo.Location = new System.Drawing.Point(4, 25);
+            this.tabPersonInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPersonInfo.Name = "tabPersonInfo";
-            this.tabPersonInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPersonInfo.Size = new System.Drawing.Size(677, 423);
+            this.tabPersonInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPersonInfo.Size = new System.Drawing.Size(905, 524);
             this.tabPersonInfo.TabIndex = 0;
             this.tabPersonInfo.Text = "Person Info";
             this.tabPersonInfo.UseVisualStyleBackColor = true;
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(541, 376);
+            this.btnNext.Location = new System.Drawing.Point(721, 463);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(93, 35);
+            this.btnNext.Size = new System.Drawing.Size(124, 43);
             this.btnNext.TabIndex = 4;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -117,11 +123,11 @@
             // ctrlPersonCardWithFilter1
             // 
             this.ctrlPersonCardWithFilter1.FilterEnabled = true;
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(0, 7);
-            this.ctrlPersonCardWithFilter1.Margin = new System.Windows.Forms.Padding(4);
+            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(0, 9);
+            this.ctrlPersonCardWithFilter1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
             this.ctrlPersonCardWithFilter1.ShowAddPerson = true;
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(797, 498);
+            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(1063, 613);
             this.ctrlPersonCardWithFilter1.TabIndex = 3;
             // 
             // tabLDAInfo
@@ -136,10 +142,11 @@
             this.tabLDAInfo.Controls.Add(this.label5);
             this.tabLDAInfo.Controls.Add(this.lblDLApplicationID);
             this.tabLDAInfo.Controls.Add(this.lable2);
-            this.tabLDAInfo.Location = new System.Drawing.Point(4, 22);
+            this.tabLDAInfo.Location = new System.Drawing.Point(4, 25);
+            this.tabLDAInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabLDAInfo.Name = "tabLDAInfo";
-            this.tabLDAInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLDAInfo.Size = new System.Drawing.Size(677, 423);
+            this.tabLDAInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabLDAInfo.Size = new System.Drawing.Size(905, 524);
             this.tabLDAInfo.TabIndex = 1;
             this.tabLDAInfo.Text = "Application Info";
             this.tabLDAInfo.UseVisualStyleBackColor = true;
@@ -147,18 +154,21 @@
             // cbLicenceClass
             // 
             this.cbLicenceClass.FormattingEnabled = true;
-            this.cbLicenceClass.Location = new System.Drawing.Point(215, 155);
+            this.cbLicenceClass.Location = new System.Drawing.Point(287, 191);
+            this.cbLicenceClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbLicenceClass.Name = "cbLicenceClass";
-            this.cbLicenceClass.Size = new System.Drawing.Size(260, 21);
+            this.cbLicenceClass.Size = new System.Drawing.Size(345, 24);
             this.cbLicenceClass.TabIndex = 10;
+            this.cbLicenceClass.SelectedIndexChanged += new System.EventHandler(this.cbLicenceClass_SelectedIndexChanged);
             // 
             // lblCreatedByUserName
             // 
             this.lblCreatedByUserName.AutoSize = true;
             this.lblCreatedByUserName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatedByUserName.Location = new System.Drawing.Point(212, 269);
+            this.lblCreatedByUserName.Location = new System.Drawing.Point(283, 331);
+            this.lblCreatedByUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreatedByUserName.Name = "lblCreatedByUserName";
-            this.lblCreatedByUserName.Size = new System.Drawing.Size(40, 16);
+            this.lblCreatedByUserName.Size = new System.Drawing.Size(56, 21);
             this.lblCreatedByUserName.TabIndex = 9;
             this.lblCreatedByUserName.Text = "[???]";
             // 
@@ -166,9 +176,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(40, 110);
+            this.label10.Location = new System.Drawing.Point(53, 135);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 16);
+            this.label10.Size = new System.Drawing.Size(152, 21);
             this.label10.TabIndex = 8;
             this.label10.Text = "Application Date";
             // 
@@ -176,9 +187,10 @@
             // 
             this.lblAppDate.AutoSize = true;
             this.lblAppDate.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppDate.Location = new System.Drawing.Point(212, 110);
+            this.lblAppDate.Location = new System.Drawing.Point(283, 135);
+            this.lblAppDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppDate.Name = "lblAppDate";
-            this.lblAppDate.Size = new System.Drawing.Size(40, 16);
+            this.lblAppDate.Size = new System.Drawing.Size(56, 21);
             this.lblAppDate.TabIndex = 7;
             this.lblAppDate.Text = "[???]";
             // 
@@ -186,9 +198,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(40, 156);
+            this.label8.Location = new System.Drawing.Point(53, 192);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 16);
+            this.label8.Size = new System.Drawing.Size(123, 21);
             this.label8.TabIndex = 6;
             this.label8.Text = "Licence Class";
             // 
@@ -196,9 +209,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 216);
+            this.label7.Location = new System.Drawing.Point(53, 266);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 16);
+            this.label7.Size = new System.Drawing.Size(151, 21);
             this.label7.TabIndex = 5;
             this.label7.Text = "Application Fees";
             // 
@@ -206,9 +220,10 @@
             // 
             this.lblAppFees.AutoSize = true;
             this.lblAppFees.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppFees.Location = new System.Drawing.Point(212, 216);
+            this.lblAppFees.Location = new System.Drawing.Point(283, 266);
+            this.lblAppFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppFees.Name = "lblAppFees";
-            this.lblAppFees.Size = new System.Drawing.Size(40, 16);
+            this.lblAppFees.Size = new System.Drawing.Size(56, 21);
             this.lblAppFees.TabIndex = 4;
             this.lblAppFees.Text = "[???]";
             // 
@@ -216,9 +231,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 269);
+            this.label5.Location = new System.Drawing.Point(53, 331);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 16);
+            this.label5.Size = new System.Drawing.Size(109, 21);
             this.label5.TabIndex = 3;
             this.label5.Text = "Created By:";
             // 
@@ -226,9 +242,10 @@
             // 
             this.lblDLApplicationID.AutoSize = true;
             this.lblDLApplicationID.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDLApplicationID.Location = new System.Drawing.Point(212, 55);
+            this.lblDLApplicationID.Location = new System.Drawing.Point(283, 68);
+            this.lblDLApplicationID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDLApplicationID.Name = "lblDLApplicationID";
-            this.lblDLApplicationID.Size = new System.Drawing.Size(40, 16);
+            this.lblDLApplicationID.Size = new System.Drawing.Size(56, 21);
             this.lblDLApplicationID.TabIndex = 1;
             this.lblDLApplicationID.Text = "[???]";
             // 
@@ -236,21 +253,23 @@
             // 
             this.lable2.AutoSize = true;
             this.lable2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable2.Location = new System.Drawing.Point(40, 55);
+            this.lable2.Location = new System.Drawing.Point(53, 68);
+            this.lable2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lable2.Name = "lable2";
-            this.lable2.Size = new System.Drawing.Size(121, 16);
+            this.lable2.Size = new System.Drawing.Size(166, 21);
             this.lable2.TabIndex = 0;
             this.lable2.Text = "D.L Application ID";
             // 
             // frmNewLocalDrivingApplication
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 544);
+            this.ClientSize = new System.Drawing.Size(933, 670);
             this.Controls.Add(this.tcLocalPersonInfo);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblHeader);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmNewLocalDrivingApplication";
             this.Text = "frmLocalDrivingApplication";
             this.Activated += new System.EventHandler(this.frmNewLocalDrivingApplication_Activated);

@@ -60,5 +60,10 @@ namespace DVLD.Applications.InternationalDrivingLicense
             frmLicensesHistory frm = new frmLicensesHistory(_License.DriverID);
             frm.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

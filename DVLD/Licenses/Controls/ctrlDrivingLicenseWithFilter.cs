@@ -15,7 +15,14 @@ namespace DVLD.Licenses.Controls
     {
         clsInternationalDrivingLicenseApplicaitonBusiness _InternationalLicense;
         clsLicenseBusniess _License;
-       public int LicenseID
+
+        public string Text
+        {
+            get { return txtFindLicense.Text; }
+            set { txtFindLicense.Text = value; }
+        }
+
+        public int LicenseID
         {
             get { return ctrlDriverLicenseInfo1.LicenseID; }
         }

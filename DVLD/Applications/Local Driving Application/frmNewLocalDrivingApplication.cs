@@ -34,7 +34,7 @@ namespace DVLD.Applications.Local_Driving_Application
 
             _Mode = enMode.Update;
         }
-       
+
 
         private void frmNewLocalDrivingApplication_Load(object sender, EventArgs e)
         {
@@ -49,15 +49,28 @@ namespace DVLD.Applications.Local_Driving_Application
 
         void FillCoboBoxWithLicenceClass()
         {
-        DataTable dtClasses=clsLicensesClassesBusiness.GetAllLicensesClasses();
-            foreach (DataRow row in dtClasses.Rows)
+            DataTable dtClasses = clsLicensesClassesBusiness.GetAllLicensesClasses();
+
+            // 🧹 مسح الربط القديم
+            cbLicenceClass.DataSource = null;
+            cbLicenceClass.Items.Clear();
+
+            // ✅ ربط الاسم بالـ ID
+            cbLicenceClass.DisplayMember = "ClassName";        // ما يظهر للمستخدم
+            cbLicenceClass.ValueMember = "LicensesClassID";    // القيمة المخفية
+            cbLicenceClass.DataSource = dtClasses;
+
+            // ✅ اختيار الافتراضي
+            if (cbLicenceClass.Items.Count > 2)
             {
-                cbLicenceClass.Items.Add(row["ClassName"]);
+                cbLicenceClass.SelectedIndex = 2; // Class 3 (العادية)
             }
-            cbLicenceClass.SelectedIndex = 2;
+            else if (cbLicenceClass.Items.Count > 0)
+            {
+                cbLicenceClass.SelectedIndex = 0; // أول عنصر
+            }
+
         }
-
-
         void _ResetDefaultValue()
         {
             FillCoboBoxWithLicenceClass();
@@ -68,17 +81,24 @@ namespace DVLD.Applications.Local_Driving_Application
                 _LDA = new clsLocalDrivingApplicationsBusiness();
                 tabLDAInfo.Enabled = false;
                 ctrlPersonCardWithFilter1.FilterFoucs();
-                lblCreatedByUserName.Text = clsGlobal.CurrentUser.UserName;
+                if (clsGlobal.CurrentUser != null)
+                {
+                    lblCreatedByUserName.Text = clsGlobal.CurrentUser.UserName;
+                }
+                else
+                {
+                    lblCreatedByUserName.Text = "Unknown User"; // أو أي نص افتراضي
+                }
 
                 lblAppFees.Text = clsApplicationTypes.Find((int)clsApplicationBusiness.enApplicationType.NewDrivingLicense).Fees.ToString();
                 lblAppDate.Text = DateTime.Now.ToString();
-                
+
                 this.Text = "Add New";
             }
             else
             {
                 lblHeader.Text = "Update Local Driving Application ";
-                tabLDAInfo.Enabled = true ;
+                tabLDAInfo.Enabled = true;
                 this.Text = "Update";
                 ctrlPersonCardWithFilter1.FilterFoucs();
             }
@@ -91,15 +111,15 @@ namespace DVLD.Applications.Local_Driving_Application
 
         void _LoadData()
         {
-            _LDA = clsLocalDrivingApplicationsBusiness.Find(_LDAppID) ;
+            _LDA = clsLocalDrivingApplicationsBusiness.Find(_LDAppID);
             if (_LDA != null)
             {
                 ctrlPersonCardWithFilter1.LoadPersonInfo(_LDA.ApplicationPersonID);
-                lblAppDate.Text=_LDA.ApplicationDate.ToString();
-                lblAppFees.Text=_LDA.PaidFees.ToString();
-                lblCreatedByUserName.Text=_LDA.CreatedByUserID.ToString();
+                lblAppDate.Text = _LDA.ApplicationDate.ToString();
+                lblAppFees.Text = _LDA.PaidFees.ToString();
+                lblCreatedByUserName.Text = _LDA.CreatedByUserID.ToString();
                 lblDLApplicationID.Text = _LDAppID.ToString();
-                cbLicenceClass.SelectedIndex = _LDA.LicenseClassID-1;
+                cbLicenceClass.SelectedIndex = _LDA.LicenseClassID - 1;
                 tabLDAInfo.Enabled = true;
 
             }
@@ -110,56 +130,56 @@ namespace DVLD.Applications.Local_Driving_Application
         {
 
             _LDA.ApplicationDate = DateTime.Parse(lblAppDate.Text);
-                _LDA.ApplicationPersonID = ctrlPersonCardWithFilter1.PersonID;
-                _LDA.ApplicationTypeID = 1;
-                _LDA.PaidFees = Convert.ToInt32(lblAppFees.Text);
-                _LDA.CreatedByUserID = clsGlobal.CurrentUser.UserID;
-                _LDA.LicenseClassID = cbLicenceClass.SelectedIndex+1;
-                _LDA.ApplicationStatus = clsApplicationBusiness.enApplicationStatus.New;
+            _LDA.ApplicationPersonID = ctrlPersonCardWithFilter1.PersonID;
+            _LDA.ApplicationTypeID = 1;
+            _LDA.PaidFees = Convert.ToInt32(lblAppFees.Text);
+            _LDA.CreatedByUserID = clsGlobal.CurrentUser.UserID;
+            _LDA.LicenseClassID = cbLicenceClass.SelectedIndex + 1;
+            _LDA.ApplicationStatus = clsApplicationBusiness.enApplicationStatus.New;
             if (clsApplicationBusiness.DoesPersonHaveActiveApplication(_LDA.ApplicationPersonID, _LDA.ApplicationTypeID, _LDA.LicenseClassID))
             {
                 MessageBox.Show("Data Is not Saved Successfully You have an active Application.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (_LDA.Save())
-                {
-                    lblHeader.Text = "Update Local Driving";
-                    lblDLApplicationID.Text = _LDA.LocalDrivingLicenseApplicationID.ToString();
-                    _Mode = enMode.Update;
-                    MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            {
+                lblHeader.Text = "Update Local Driving";
+                lblDLApplicationID.Text = _LDA.LocalDrivingLicenseApplicationID.ToString();
+                _Mode = enMode.Update;
+                MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                }
-                else
-                {
-                    MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
-            
+            }
+
 
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if(_Mode == enMode.Update)
+            if (_Mode == enMode.Update)
             {
-                btnSave.Enabled = true ;
+                btnSave.Enabled = true;
                 tabLDAInfo.Enabled = true;
                 tcLocalPersonInfo.SelectedTab = tcLocalPersonInfo.TabPages["tabLDAInfo"];
             }
             if (ctrlPersonCardWithFilter1.PersonID != -1)
             {
 
-             
-                    btnSave.Enabled = true;
-                    tabLDAInfo.Enabled = true;
-                    tcLocalPersonInfo.SelectedTab = tcLocalPersonInfo.TabPages["tabLDAInfo"];
-                
+
+                btnSave.Enabled = true;
+                tabLDAInfo.Enabled = true;
+                tcLocalPersonInfo.SelectedTab = tcLocalPersonInfo.TabPages["tabLDAInfo"];
+
             }
             else
 
             {
                 MessageBox.Show("Please Select a Person", "Select a Person", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               
+
 
             }
         }
@@ -173,5 +193,25 @@ namespace DVLD.Applications.Local_Driving_Application
         {
             ctrlPersonCardWithFilter1.FilterFoucs();
         }
+
+        private void cbLicenceClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbLicenceClass.SelectedValue != null && int.TryParse(cbLicenceClass.SelectedValue.ToString(), out int selectedClassID))
+            {
+                clsLicensesClassesBusiness selectedClass = clsLicensesClassesBusiness.Find(selectedClassID);
+
+                if (selectedClass != null)
+                {
+                    lblAppFees.Text = selectedClass.ClassFees.ToString("F2");
+                }
+                else
+                {
+                    lblAppFees.Text = "0.00";
+                }
+            }
+        
+    
+
+                }
     }
 }

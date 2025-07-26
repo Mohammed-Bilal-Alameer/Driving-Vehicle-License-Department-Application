@@ -54,7 +54,7 @@ namespace DVLD.Applications.Local_Driving_Application.Control
                 lblApplicationID.Text =_LocalApp.ApplicationID.ToString();
                 lblApplicationDate.Text = _LocalApp.ApplicationDate.ToString();
                 lblClassName.Text = _LocalApp.LicensInfo.ClassName;
-                lblCreatedByUserName.Text = _LocalApp.ApplicationCreater;
+                lblCreatedByUserName.Text = "";
                 lblDLAPPID.Text = _LocalApp.LocalDrivingLicenseApplicationID.ToString();
                 lblPassedTests.Text =clsTestApplointmentsBusiness.GetPassedTests(LocalID,true) + "/3";
                 lblStatus.Text = _LocalApp.StatusText.ToString();

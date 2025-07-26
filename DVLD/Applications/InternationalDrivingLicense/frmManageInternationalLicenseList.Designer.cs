@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvInternationalLicenseList = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showPersonDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLicenseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showDriverLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenseList)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -46,16 +46,51 @@
             this.dgvInternationalLicenseList.BackgroundColor = System.Drawing.Color.White;
             this.dgvInternationalLicenseList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInternationalLicenseList.ContextMenuStrip = this.contextMenuStrip1;
-            this.dgvInternationalLicenseList.Location = new System.Drawing.Point(12, 124);
+            this.dgvInternationalLicenseList.Location = new System.Drawing.Point(16, 153);
+            this.dgvInternationalLicenseList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvInternationalLicenseList.Name = "dgvInternationalLicenseList";
-            this.dgvInternationalLicenseList.Size = new System.Drawing.Size(776, 288);
+            this.dgvInternationalLicenseList.RowHeadersWidth = 51;
+            this.dgvInternationalLicenseList.Size = new System.Drawing.Size(1035, 354);
             this.dgvInternationalLicenseList.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showPersonDetailsToolStripMenuItem,
+            this.showLicenseDetailsToolStripMenuItem,
+            this.showDriverLicenseHistoryToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(262, 76);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // showPersonDetailsToolStripMenuItem
+            // 
+            this.showPersonDetailsToolStripMenuItem.Name = "showPersonDetailsToolStripMenuItem";
+            this.showPersonDetailsToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.showPersonDetailsToolStripMenuItem.Text = "Show Person Details";
+            this.showPersonDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPersonDetailsToolStripMenuItem_Click);
+            // 
+            // showLicenseDetailsToolStripMenuItem
+            // 
+            this.showLicenseDetailsToolStripMenuItem.Name = "showLicenseDetailsToolStripMenuItem";
+            this.showLicenseDetailsToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.showLicenseDetailsToolStripMenuItem.Text = "Show License Details";
+            this.showLicenseDetailsToolStripMenuItem.Click += new System.EventHandler(this.showLicenseDetailsToolStripMenuItem_Click);
+            // 
+            // showDriverLicenseHistoryToolStripMenuItem
+            // 
+            this.showDriverLicenseHistoryToolStripMenuItem.Name = "showDriverLicenseHistoryToolStripMenuItem";
+            this.showDriverLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(261, 24);
+            this.showDriverLicenseHistoryToolStripMenuItem.Text = "Show Driver License History";
+            this.showDriverLicenseHistoryToolStripMenuItem.Click += new System.EventHandler(this.showDriverLicenseHistoryToolStripMenuItem_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(711, 84);
+            this.btnAdd.Location = new System.Drawing.Point(948, 103);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(56, 30);
+            this.btnAdd.Size = new System.Drawing.Size(75, 37);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -64,64 +99,37 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(711, 422);
+            this.button2.Location = new System.Drawing.Point(948, 519);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 30);
+            this.button2.Size = new System.Drawing.Size(87, 37);
             this.button2.TabIndex = 2;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(204, 50);
+            this.label1.Location = new System.Drawing.Point(272, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(402, 23);
+            this.label1.Size = new System.Drawing.Size(501, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "International Driving License Applicaiton";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showPersonDetailsToolStripMenuItem,
-            this.showLicenseDetailsToolStripMenuItem,
-            this.showDriverLicenseHistoryToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(221, 70);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
-            // 
-            // showPersonDetailsToolStripMenuItem
-            // 
-            this.showPersonDetailsToolStripMenuItem.Name = "showPersonDetailsToolStripMenuItem";
-            this.showPersonDetailsToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.showPersonDetailsToolStripMenuItem.Text = "Show Person Details";
-            this.showPersonDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPersonDetailsToolStripMenuItem_Click);
-            // 
-            // showLicenseDetailsToolStripMenuItem
-            // 
-            this.showLicenseDetailsToolStripMenuItem.Name = "showLicenseDetailsToolStripMenuItem";
-            this.showLicenseDetailsToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.showLicenseDetailsToolStripMenuItem.Text = "Show License Details";
-            this.showLicenseDetailsToolStripMenuItem.Click += new System.EventHandler(this.showLicenseDetailsToolStripMenuItem_Click);
-            // 
-            // showDriverLicenseHistoryToolStripMenuItem
-            // 
-            this.showDriverLicenseHistoryToolStripMenuItem.Name = "showDriverLicenseHistoryToolStripMenuItem";
-            this.showDriverLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.showDriverLicenseHistoryToolStripMenuItem.Text = "Show Driver License History";
-            this.showDriverLicenseHistoryToolStripMenuItem.Click += new System.EventHandler(this.showDriverLicenseHistoryToolStripMenuItem_Click);
-            // 
             // frmManageInternationalLicenseList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 464);
+            this.ClientSize = new System.Drawing.Size(1067, 571);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvInternationalLicenseList);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmManageInternationalLicenseList";
             this.Text = "frmManageInternationalLicenseList";
             this.Load += new System.EventHandler(this.frmManageInternationalLicenseList_Load);

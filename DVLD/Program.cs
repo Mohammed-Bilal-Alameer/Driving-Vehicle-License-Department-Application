@@ -24,6 +24,7 @@ namespace DVLD
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new AddUpdateUser(-1));
+           //Application.Run(new frmDVLDMain());
             Application.Run(new frmLoginScreen());
             //Application.Run(new frmListPeople());
             //Application.Run(new UsersList());

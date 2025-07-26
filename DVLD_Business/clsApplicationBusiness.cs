@@ -72,10 +72,10 @@ namespace DVLD_Business
         public float PaidFees { set; get; }
         public int CreatedByUserID { set; get; }
         public clsUsersWithHadhuad CreatedByUserInfo { set; get; }
-        public string ApplicationCreater
-        {
-            get { return clsUsersWithHadhuad.FindByUserID(CreatedByUserID).UserName; }
-        }
+        //public string ApplicationCreater
+        //{
+        //    get { return clsUsersWithHadhuad.FindByUserID(CreatedByUserID).UserName; }
+        //}
         //By This you can bring the person info too
 
        public clsApplicationBusiness()

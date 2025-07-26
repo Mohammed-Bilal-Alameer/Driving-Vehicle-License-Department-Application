@@ -159,8 +159,8 @@ namespace DVLD.People
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            if (!_HandlePersonImage())
-                return;
+            //if (!_HandlePersonImage())
+            //    return;
 
 
             _FillPersonData();

@@ -20,6 +20,7 @@ namespace DVLD.Applications.InternationalDrivingLicense
         public frmNewInternationalLicense()
         {
             InitializeComponent();
+            LlblShowLicensesHistory.Enabled = false;
         }
 
         private void ctrlDrivingLicenseWithFilter1_OnLicenseSelected(int obj)
@@ -66,7 +67,12 @@ namespace DVLD.Applications.InternationalDrivingLicense
 
         private void btnIssue_Click(object sender, EventArgs e)
         {
-            _InternationalLicense=new clsInternationalDrivingLicenseApplicaitonBusiness();
+
+            if (string.IsNullOrEmpty(ctrlDrivingLicenseWithFilter1.Text)) {
+                MessageBox.Show("Error: The Driver License cant be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            _InternationalLicense =new clsInternationalDrivingLicenseApplicaitonBusiness();
 
             _InternationalLicense.DriverID= _License.DriverID;
             _InternationalLicense.IssuedUsingLocalLicenseID = _License.LicenseID;
@@ -88,6 +94,9 @@ namespace DVLD.Applications.InternationalDrivingLicense
                 lblILApplicationID.Text=_InternationalLicense.ApplicationID.ToString();
                 lblILLicenseID.Text=_InternationalLicense.InternationalLicenseID.ToString();
                 LlblShowLicenseInfo.Enabled = true;
+                btnIssue.Enabled = false;
+                LlblShowLicensesHistory.Enabled = true;
+             
             }
             else
             {
@@ -113,6 +122,11 @@ namespace DVLD.Applications.InternationalDrivingLicense
         {
             frmLicensesHistory frm = new frmLicensesHistory(_InternationalLicense.DriverID);
             frm.ShowDialog();
+        }
+
+        private void ctrlDrivingLicenseWithFilter1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

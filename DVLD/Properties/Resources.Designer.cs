@@ -63,6 +63,16 @@ namespace DVLD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5e90f253_3222_4df5_9d48_03b15b65d81c {
+            get {
+                object obj = ResourceManager.GetObject("5e90f253-3222-4df5-9d48-03b15b65d81c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap admin_female {
             get {
                 object obj = ResourceManager.GetObject("admin_female", resourceCulture);
@@ -96,6 +106,16 @@ namespace DVLD.Properties {
         internal static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e6ec4896_3114_431f_b95e_06515a939f43 {
+            get {
+                object obj = ResourceManager.GetObject("e6ec4896-3114-431f-b95e-06515a939f43", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

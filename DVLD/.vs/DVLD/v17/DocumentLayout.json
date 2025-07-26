@@ -1,20 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\",
+  "WorkspaceRootPath": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{733018B6-911C-4BFA-BDCC-97E76E00CE69}|..\\ClassLibrary1\\DVLD_DataAccess.csproj|c:\\\u0645\u0644\u0641\u0627\u062A\u064A\\programming\\datebase sql server\\projects\\dvld project\\classlibrary1\\clsapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C623DC92-13F6-4187-8393-FC93AE60DEE9}|..\\DVLD_Business\\DVLD_Business.csproj|c:\\\u0645\u0644\u0641\u0627\u062A\u064A\\programming\\datebase sql server\\projects\\dvld project\\dvld_business\\clsapplicationbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|e:\\\u0645\u0644\u0641\u0627\u062A\u064A\\programming\\datebase sql server\\projects\\dvld project\\dvld\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733018B6-911C-4BFA-BDCC-97E76E00CE69}|..\\ClassLibrary1\\DVLD_DataAccess.csproj|e:\\\u0645\u0644\u0641\u0627\u062A\u064A\\programming\\datebase sql server\\projects\\dvld project\\classlibrary1\\clsdetaindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{341328E4-278C-4927-A566-EF60AB5773A1}|DVLD.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,55 +21,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsApplicationBusiness.cs",
-              "DocumentMoniker": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD_Business\\clsApplicationBusiness.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsApplicationBusiness.cs",
-              "ToolTip": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD_Business\\clsApplicationBusiness.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsApplicationBusiness.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAALMAAAATAAAAAAAAAA==",
+              "Title": "clsDetainData.cs",
+              "DocumentMoniker": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\ClassLibrary1\\clsDetainData.cs",
+              "RelativeDocumentMoniker": "..\\ClassLibrary1\\clsDetainData.cs",
+              "ToolTip": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\ClassLibrary1\\clsDetainData.cs",
+              "RelativeToolTip": "..\\ClassLibrary1\\clsDetainData.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:48:48.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsApplication.cs",
-              "DocumentMoniker": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\ClassLibrary1\\clsApplication.cs",
-              "RelativeDocumentMoniker": "..\\ClassLibrary1\\clsApplication.cs",
-              "ToolTip": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\ClassLibrary1\\clsApplication.cs",
-              "RelativeToolTip": "..\\ClassLibrary1\\clsApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:48:11.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T05:47:37.851Z"
+              "WhenOpened": "2025-07-24T13:49:59.432Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs",
+              "DocumentMoniker": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs",
+              "ToolTip": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA3wDEAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAIA1wDAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T19:00:09.747Z"
+              "WhenOpened": "2025-07-16T07:49:24.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\\u0645\u0644\u0641\u0627\u062A\u064A\\PROGRAMMING\\DateBase SQL Server\\Projects\\DVLD Project\\DVLD\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T07:49:23.016Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

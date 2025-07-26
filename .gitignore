@@ -5,4 +5,5 @@ obj/
 *.exe
 *.dll
 *.pdb
+.vs/
 

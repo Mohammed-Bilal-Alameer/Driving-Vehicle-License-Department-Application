@@ -27,7 +27,12 @@ namespace DVLD
             _LoginForm = frm;
 
         }
+        public frmDVLDMain()
+        {
+            InitializeComponent();
+       
 
+        }
         private void frmDVLDMain_MouseHover(object sender, EventArgs e)
         {
             BackColor = Color.Silver;
@@ -41,7 +46,7 @@ namespace DVLD
 
         private void frmDVLDMain_Load(object sender, EventArgs e)
         {
-            lblCurrentUser.Text=clsGlobal.CurrentUser.UserName;
+           lblCurrentUser.Text=clsGlobal.CurrentUser.UserName;
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
