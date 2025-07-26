@@ -1,19 +1,23 @@
-Driving & Vehicle License Department (DVLD) Application
+# 🚗 Driving & Vehicle License Department (DVLD) – Desktop Application
 
-DVLD is a desktop application developed from scratch using ASP.NET Core Windows Forms, ADO.NET, and Microsoft SQL Server. It is designed to streamline and automate the process of issuing driving licenses, ensuring an efficient and well-organized workflow.
+**DVLD** is a desktop application developed from scratch using **C# .NET Framework**, **ADO.NET**, and **Microsoft SQL Server**.  
+It is designed to manage and streamline the process of issuing driving licenses and storing related records securely.
 
-Features
+---
 
-Efficient management of driver licensing processes.
+## 🔑 Features
 
-Secure storage and retrieval of license data.
+- Full management of local and international driving license applications
+- Secure and relational database design
+- Simple and clean Windows Forms UI
+- Structured system with People, Drivers, Applications, Licenses, and Users
+- Includes database backup files for recovery or migration
 
-User-friendly interface for easy navigation.
+---
 
-Technologies Used
+## 🛠 Technologies Used
 
-ASP.NET Core Windows Forms
-
-ADO.NET
-
-Microsoft SQL Server
+- C# .NET Framework (Windows Forms)
+- ADO.NET for database interaction
+- Microsoft SQL Server
+- Git & GitHub for version control
